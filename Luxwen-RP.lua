@@ -207,6 +207,10 @@ function sampev.onServerMessage(color, text)
 		sampSendChat("/rub")
 
 
+	elseif text:find("^Вы авторизировались как") then
+		sampSendChat("/agm")
+
+
 	elseif not flags.show_news and text:find("^{FA8D20}.+ | Контакт: ") or text:find("^  {D16E0B}Объявление отредактировано") or text:find("^СМИ | ") or text:find("^  Объявление проверил") then
 		return false
 
