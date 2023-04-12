@@ -127,7 +127,7 @@ local flags = {
 function main()
 	repeat wait(100) until isSampAvailable()
 
-	autoupdate("https://raw.githubusercontent.com/msssssx/Luxwen-RP/main/version.json", '['..string.upper(thisScript().name)..']: ', "https://github.com/msssssx/Luxwen-RP/blob/main/Luxwen-RP.lua")
+	autoupdate("https://raw.githubusercontent.com/msssssx/Luxwen-RP/main/version.json", '['..string.upper(thisScript().name)..']: ', "https://raw.githubusercontent.com/msssssx/Luxwen-RP/main/Luxwen-RP.lua")
 
 	while true do
 		wait(0)
